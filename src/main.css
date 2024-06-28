@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 h1 {
-  @apply text-4xl  text-center;
+  @apply text-6xl text-center;
   @apply text-transparent bg-clip-text bg-gradient-to-r from-neutral-800 to-red-500;
 }
 
+h3 {
+  @apply font-light;
+}
+
 body {
-  @apply flex flex-col items-center justify-center justify-center min-h-screen;
+  @apply flex flex-col items-center justify-center min-h-screen;
+  font-family: 'Kanit', sans-serif;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='59.428' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M0 70.975V47.881m20-1.692L8.535 52.808v13.239L20 72.667l11.465-6.62V52.808zm0-32.95l11.465-6.62V-6.619L20-13.24 8.535-6.619V6.619L20 13.24m8.535 4.927v13.238L40 38.024l11.465-6.62V18.166L40 11.546zM20 36.333L0 47.88m0 0v23.094m0 0l20 11.548 20-11.548V47.88m0 0L20 36.333m0 0l20 11.549M0 11.547l-11.465 6.619v13.239L0 38.025l11.465-6.62v-13.24L0 11.548v-23.094l20-11.547 20 11.547v23.094M20 36.333V13.24'  stroke-linecap='square' stroke-width='1' stroke='hsla(33, 90%, 65%, 0.05)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
 }
 
 form {
@@ -16,9 +27,9 @@ form {
 }
 
 input {
-  @apply border rounded-full justify-center border-neutral-200;
+  @apply font-light text-center border rounded-full border-neutral-200;
 }
 
 button {
-  @apply px-4 py-2 rounded-full bg-neutral-200 text-neutral-800;
+  @apply px-4 py-2 font-light transition-all duration-300 rounded-full bg-neutral-200 text-slate-50 bg-gradient-to-r from-red-700 to-amber-500 hover:bg-gradient-to-b hover:from-amber-500 hover:to-red-700 hover:text-slate-50;
 }
