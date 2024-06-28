@@ -82,7 +82,7 @@ export default function App() {
 
   const searchMovie = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    const url = `http://www.omdbapi.com/?apikey=63dda1f6&s=${query}`;
+    const url = `https://www.omdbapi.com/?apikey=63dda1f6&s=${query}`;
   
     try {
      
