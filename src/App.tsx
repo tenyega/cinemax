@@ -80,7 +80,7 @@ export default function App() {
     }
   ]);
 
-  const searchMovie = async (e) => {
+  const searchMovie = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const url = `http://www.omdbapi.com/?apikey=63dda1f6&s=${query}`;
   
@@ -96,6 +96,7 @@ export default function App() {
       }
     } catch(err) {
       setError("Une erreur est survenue lors votre recherche")
+      console.log(error);
     }
     
   }
