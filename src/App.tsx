@@ -8,13 +8,7 @@ export default function App() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [listMovies, setListMovies] = useState([
-    {
-      "Title": "Harry Potter and the Sorcerer's Stone",
-      "Year": "2001",
-      "imdbID": "tt0241527",
-      "Type": "movie",
-      "Poster": ""
-    },
+ 
     {
       "Title": "The Sword in the Stone",
       "Year": "1963",
