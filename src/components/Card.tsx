@@ -24,7 +24,7 @@ export default function Card({ movies }: Movies) {
                         className="rounded-lg" 
                         alt={ card.Title } 
                         width={330}/>
-                        <div className="flex flex-col justify-between p-2">
+                        <div className="flex flex-col justify-between p-2 text:black">
                             <h5 className="text-xl font-light leading-relaxed">{ card.Title }</h5>
                             <p className="text-center">{ card.Year }</p>
                         </div>
